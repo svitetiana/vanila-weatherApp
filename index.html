@@ -20,24 +20,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
-        <header>
-          <h1>Kyiv</h1>
-          <ul>
-            <li>Thursday, 7:45</li>
-            <li>Clear</li>
-          </ul>
-        </header>
-        <div class="row">
-          <div class="col-6">15 C | F</div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <header>
+            <h1>Kyiv</h1>
             <ul>
-              <li>Humidity: 73%</li>
-              <li>Wind: 5m/s</li>
+              <li>Thursday, 7:45</li>
+              <li>Clear</li>
             </ul>
+          </header>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <div class="float-left">
+                  <strong>15</strong><span class="units">C | F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: 73%</li>
+                <li>Wind: 5m/s</li>
+              </ul>
+            </div>
           </div>
         </div>
-
         <footer>
           <a
             href="http://https://github.com/svitetiana/vanila-weatherApp"
