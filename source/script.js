@@ -38,6 +38,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "2e8a4b45b375acbabf901bd141fc3608";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv&units=metric&appid=${apiKey}`;
+let city = "Bratslav";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 axios.get(apiUrl).then(displayTemperature);
