@@ -28,6 +28,7 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -54,4 +55,7 @@ li:first-letter {
 }
 .float-left {
   float: left;
+}
+#icon {
+  max-block-size: 60px;
 }

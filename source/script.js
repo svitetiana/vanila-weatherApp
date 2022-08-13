@@ -1,7 +1,7 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
-  if (minutes < 10) {
+  if (hours < 10) {
     hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
@@ -43,8 +43,16 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(event) {
+  event.preventDefault();
+  
+}
+
 let apiKey = "2e8a4b45b375acbabf901bd141fc3608";
 let city = "Kyiv";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 axios.get(apiUrl).then(displayTemperature);
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);
