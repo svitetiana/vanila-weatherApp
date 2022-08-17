@@ -32,6 +32,7 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -53,6 +54,17 @@ li:first-letter {
   font-size: 16px;
   top: -24px;
 }
+
+.weather-temperature .active {
+  color: #878787;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 .float-left {
   float: left;
 }
