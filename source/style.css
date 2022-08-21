@@ -63,6 +63,10 @@ li:first-letter {
   text-align: left;
 }
 
+.weather-temperature .units {
+  font-size: 18px;
+}
+
 .weather-temperature .active {
   color: rgba(12, 10, 42);
   cursor: default;
@@ -72,13 +76,21 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+.main-info {
+  display: block;
+  text-align: center;
+}
 
 .float-left {
   float: left;
 }
+
 #icon {
   max-block-size: 60px;
 }
 #city {
-  font-weight: 600;
+  font-weight: 500;
+}
+#sub-info {
+  padding-top: 12px;
 }

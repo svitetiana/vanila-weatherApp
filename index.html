@@ -24,7 +24,7 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <header>
-            <form id="search-form" class="mb-3">
+            <form id="search-form" class="bg-3">
               <div class="row">
                 <div class="col-9">
                   <input
@@ -43,15 +43,21 @@
                 </div>
               </div>
             </form>
-            <div class="main-info">
-              <h1 id="city"></h1>
-              <ul>
+          </header>
+          <h1 id="city"></h1>
+          <div class="row">
+            <div class="col-3 d-flex v1">
+              <ul id="sub-info">
                 <li id="date"></li>
                 <li id="description"></li>
               </ul>
             </div>
-          </header>
-          <div class="row">
+            <div class="col-5 d-flex">
+              <ul id="sub-info">
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
             <div class="col-4">
               <div class="d-flex weather-temperature">
                 <img src="" alt="" id="icon" class="float-left" />
@@ -63,12 +69,6 @@
                   </span>
                 </div>
               </div>
-            </div>
-            <div class="col-8">
-              <ul>
-                <li>Humidity: <span id="humidity"></span></li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
             </div>
           </div>
         </div>
