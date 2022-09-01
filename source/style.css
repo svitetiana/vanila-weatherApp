@@ -89,6 +89,11 @@ li:first-letter {
   text-align: center;
 }
 
+.col-2 {
+  margin: 0 auto;
+  display: block;
+}
+
 #icon {
   max-block-size: 60px;
 }
