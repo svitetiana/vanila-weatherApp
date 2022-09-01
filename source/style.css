@@ -8,6 +8,8 @@ header {
 }
 footer {
   font-size: 14px;
+  padding-top: 8px;
+  text-align: center;
 }
 
 h1 {
@@ -45,7 +47,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 640px;
   margin: 30px auto;
 }
 .weather-app {
@@ -92,6 +94,22 @@ li:first-letter {
 .col-2 {
   margin: 0 auto;
   display: block;
+  border-radius: 8px;
+  background-color: rgba(46, 133, 255, 0.16);
+}
+.weather-forecast-temperature-max {
+  font-size: 16px;
+  font-weight: 400;
+}
+.weather-forecast-temperature-min {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(12, 10, 42, 0.7);
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 480;
 }
 
 #icon {
@@ -102,4 +120,7 @@ li:first-letter {
 }
 #sub-info {
   padding-top: 12px;
+}
+#forecast-columns {
+  padding: 8px;
 }
