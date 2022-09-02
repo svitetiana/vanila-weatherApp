@@ -112,6 +112,9 @@ li:first-letter {
 #icon {
   max-block-size: 60px;
 }
+#forecast-icon{
+  text-align: center;
+}
 #city {
   color: rgba(12, 10, 42);
   font-size: 24px;
