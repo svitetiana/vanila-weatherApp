@@ -1,6 +1,11 @@
 body {
   font-family: system-ui, -apple-system, Arial, sans-serif;
   background-color: rgb(45, 72, 110);
+  background-image: url(mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   color: rgba(12, 10, 42);
 }
 header {
@@ -8,8 +13,9 @@ header {
 }
 footer {
   font-size: 14px;
-  padding-top: 8px;
+  padding-top: 12px;
   text-align: center;
+  text-decoration-color: rgba(35, 23, 197, 0.7);
 }
 
 h1 {
@@ -51,10 +57,9 @@ li:first-letter {
   margin: 30px auto;
 }
 .weather-app {
-  padding: 20px;
-  border: 3px solid #b3dbef;
+  padding: 26px;
   border-radius: 6px;
-  background-color: #dadee4;
+  background-color: white;
   color: rgba(12, 10, 42);
 }
 .weather-temperature strong {
@@ -82,7 +87,7 @@ li:first-letter {
   margin: 0 auto;
   display: block;
   border-radius: 8px;
-  background-color: rgba(46, 133, 255, 0.16);
+  background-color: rgba(96, 152, 255, 0.24);
 }
 
 .weather-forecast-temperature-max {
@@ -99,7 +104,11 @@ li:first-letter {
   font-size: 16px;
   font-weight: 480;
 }
-
+.higlight-me {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border-radius: 2px;
+}
 #icon {
   max-block-size: 60px;
 }
